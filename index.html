@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail Finder</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Search Section -->
+
+  <div class="col-md-8 d-block mx-auto">
+    <div class="input-group w-75 m-5">
+      <input id="searchBox" type="text" class="form-control" placeholder="Enter a drink name">
+      <button id="searchButton" class="btn btn-primary">Search</button>
+    </div>
+  </div>
+
+<hr>
+
+  <!-- Cards Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-lg-8 col-xl-9 ">
+        <div class="row" id="view-all-card">
+
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-4 col-xl-3 mt-3 order-first order-md-last">
+        <h4 class="text-center p-2 bg-success
+                    w-100 rounded-top " id="total-cart"> Now Add To Card </h4>
+
+        <table class="table table-bordered table-hover">
+          <thead class="table-dark object-fit-contain">
+            <tr>
+              <th>SL</th>
+              <th>Image</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body">
+            <!-- Row 1 -->
+
+            <!-- Row 2 -->
+
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Cart Section -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="details-modal" tabindex="-1" aria-labelledby="details-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="details-modalLabel">Drink Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modal-body" class="modal-body">
+          <!-- Drink details will be dynamically added here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your JavaScript File -->
+  <script src="app.js"></script>
+</body>
+
+</html>
